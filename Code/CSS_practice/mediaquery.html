@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+    <ul>
+        <li><span>text</span><em>sibling</em></li>
+        <li><span>text</span><em>sibling</em></li>
+        <li><span>text</span><em>sibling</em></li>
+    </ul>
+</body>
+<script>
+    $(document).ready(function() {
+        $("span").siblings().css({"color": "red"});
+    });
+</script>
+
+</html>

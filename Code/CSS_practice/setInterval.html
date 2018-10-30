@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<style>
+    p { font: bold 100px arial; margin: 50px auto; text-align: center;}
+</style>
+
+<body>
+    <p>
+        <span>00</span>:<span>00</span>:<span>00</span>
+    </p>
+</body>
+<script>
+$(document).ready(function() {
+    var ab = setInterval(function() {
+        
+        var now = new Date();
+        var hr = now.getHours();
+        var min = now.getMinutes();
+        var sec = now.getSeconds();
+        
+        $("span").eq(0).text(hr);
+        $("span").eq(1).text(min);
+        $("span").eq(2).text(sec);
+    },1000);
+});
+</script>
+
+</html>

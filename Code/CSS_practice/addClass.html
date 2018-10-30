@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<style>
+    ul li {font-size: 20px; margin-left: 50px;}
+    div { width: 200px; height: 200px; margin: 50px; background: #888; }
+    div.on { width: 400px; height: 400px; background: red; }
+</style>
+
+<body>
+    <ul>
+        <li>add class</li>
+        <li>delete class</li>
+    </ul>
+    
+    <div></div>
+</body>
+<script>
+$(document).ready(function() {
+    $("li").eq(0).on("click", function(){
+        $("div").addClass("on");
+});
+    $("li").eq(1).on("click", function(){
+        $("div").removeClass();
+});
+
+});
+</script>
+
+</html>
